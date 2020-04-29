@@ -1,0 +1,42 @@
+.section--masthead-container {
+    height: 100vh;
+    .masthead-wrapper{
+        @include bgSettings(cover , no-repeat, center);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding-top: em(170);
+            padding-bottom: em(65);
+            .header-wrapper {
+                .header-title-wrapper {
+                    margin-bottom: em(25);
+                    h1 {
+                        text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
+                    }
+                }
+                .header-description-wrapper {
+                    max-width: em(700);
+                    width: 100%;
+                    p{
+                        color: $white;
+                        line-height: em(24);
+                        font-style: italic;
+                        text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
+                    }
+                }
+            }
+            .get-started-btn-wrapper {
+
+            }
+
+        }
+    }
+}

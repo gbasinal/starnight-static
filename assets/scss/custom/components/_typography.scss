@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$lato :  'Lato', sans-serif;
+
+h1, h2, h3, h4, h5, h6, a, p , li, span  {
+    font-family: $lato;
+    margin: 0;
+}
+
+h1 {
+    @include textStyle($white , 60, -1 , 48, 300);
+}
+
+h2 {
+    @include textStyle($white , 55, 0 , 53, 300);
+}
+
+h3 {
+    @include textStyle($black , 45, 0 , 53, 300);
+}
+
+h4 {
+    @include textStyle($black , 15, 3 , 0, 700);
+}
+
+p, a {
+    @include textStyle($black , 16, 0 , 30, 400);
+}
