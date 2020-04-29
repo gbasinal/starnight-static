@@ -20,6 +20,10 @@ b, strong {
 
 .section {
     .section-wrapper {
-        padding: 0 em(25);
+        padding: em(90) em(200);
+        @media only screen and (max-width: 1024px){
+            padding: 0 em(25);
+        }
+        
     }
 }

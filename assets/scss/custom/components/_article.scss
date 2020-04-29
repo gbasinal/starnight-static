@@ -1,0 +1,40 @@
+.section--article-body-container {
+    height: 100%;
+    .article-bgStyle{
+        @include bgSettings(cover , no-repeat, center);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .article-body-wrapper {
+
+        
+        .article-main-container {
+            max-width: em(680);
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 1;
+            .article-header-container {
+                margin-bottom: em(40);
+            }
+            .article-content-container {
+                margin-bottom: em(65);
+                p{
+                    color: $white;
+                    margin-bottom: em(45);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .article-btn-container {
+    
+            }
+        }
+
+    }
+    
+}
