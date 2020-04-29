@@ -1,4 +1,10 @@
-body {}
+body {
+    font-size: 1vw;
+    margin: 0;
+    @media only screen and (max-width: 1024px){
+        font-size: 16px;
+    }
+}
 
 b, strong {
     font-weight:bold;
@@ -6,4 +12,14 @@ b, strong {
 
 * {
     outline: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+
+.section {
+    .section-wrapper {
+        padding: 0 em(25);
+    }
 }

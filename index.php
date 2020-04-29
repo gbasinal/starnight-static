@@ -11,7 +11,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <script src="https://kit.fontawesome.com/56946c59de.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/build.css">
 </head>
 
@@ -21,6 +21,7 @@
 
   <!-- Site -->
 
+  <?php include 'components/masthead.php' ?>
 
 
   <!-- Default -->
