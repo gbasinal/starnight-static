@@ -1,5 +1,6 @@
 <section class="section section--masthead-container">
-    <div class="masthead-wrapper" style="background-image: url('/assets/img/masthead.jpg')">
+    <div class="masthead-bgStyle" style="background-image: url('/assets/img/masthead.jpg')"></div>
+    <div class="section-wrapper masthead-wrapper" >
         <div class="header-container">
             <div class="header-wrapper">
                 <div class="header-title-wrapper">
