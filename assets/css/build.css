@@ -416,12 +416,15 @@ b, strong {
   box-sizing: border-box;
 }
 
+.section {
+  position: relative;
+}
 .section .section-wrapper {
   padding: 5.625em 12.5em;
 }
 @media only screen and (max-width: 1024px) {
   .section .section-wrapper {
-    padding: 0 1.5625em;
+    padding: 1.5625em;
   }
 }
 
@@ -750,6 +753,8 @@ p, a {
   height: 100%;
   position: absolute;
   z-index: 0;
+  top: 0;
+  bottom: 0;
 }
 .section--masthead-container .masthead-wrapper {
   display: flex;
@@ -796,6 +801,8 @@ p, a {
   height: 100%;
   position: absolute;
   z-index: -1;
+  top: 0;
+  bottom: 0;
 }
 .section--article-body-container .article-body-wrapper .article-main-container {
   max-width: 42.5em;
