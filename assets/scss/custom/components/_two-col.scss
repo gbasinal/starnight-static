@@ -4,9 +4,13 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            position: relative;
             .item {
                 margin-bottom: em(70);
                 width: calc(50% - 6.063em);
+                @media only screen and (max-width: 991px){
+                    width: calc(50% - 4.063em);
+                }
                 @media only screen and (max-width: 767px){
                     width: 100%;
                     margin-bottom: em(25);
@@ -22,6 +26,20 @@
                     p{
 
                     }
+                }
+            }
+            .divider {
+                height: calc(100% - 4.375em);
+                width: 1px;
+                background-color: $black;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0.2;
+                @media only screen and (max-width: 767px){
+                    display: none;
                 }
             }
         }
