@@ -7,7 +7,10 @@
             .item {
                 margin-bottom: em(70);
                 width: calc(50% - 6.063em);
-                
+                @media only screen and (max-width: 767px){
+                    width: 100%;
+                    margin-bottom: em(25);
+                }
                 .item-header-wrapper {
                     margin-bottom: em(30);
                     h4 {

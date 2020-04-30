@@ -424,6 +424,11 @@ b, strong {
 }
 @media only screen and (max-width: 1024px) {
   .section .section-wrapper {
+    padding: 4.375em 3.4375em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section .section-wrapper {
     padding: 4.375em 1.5625em;
   }
 }
@@ -914,6 +919,12 @@ p, a {
 .section--two-col-container .two-col-wrapper .item-container .item {
   margin-bottom: 4.375em;
   width: calc(50% - 6.063em);
+}
+@media only screen and (max-width: 767px) {
+  .section--two-col-container .two-col-wrapper .item-container .item {
+    width: 100%;
+    margin-bottom: 1.5625em;
+  }
 }
 .section--two-col-container .two-col-wrapper .item-container .item .item-header-wrapper {
   margin-bottom: 1.875em;
