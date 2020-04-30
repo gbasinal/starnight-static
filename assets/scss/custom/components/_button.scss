@@ -16,7 +16,10 @@
         background-color: $blue;
         text-align: center;
         line-height: 1;
-
-
+    }
+    &.btn-download {
+        padding: 0;
+        @include textStyle( $white, 18, 0, 21 , 700 );
+        box-shadow: none;
     }
 }

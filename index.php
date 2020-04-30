@@ -22,7 +22,7 @@
   <!-- Site -->
 
   <?php include 'components/masthead.php' ?>
-
+  <?php include 'components/article.php' ?>
 
   <!-- Default -->
   <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
