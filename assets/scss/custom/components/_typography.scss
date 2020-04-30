@@ -20,7 +20,7 @@ h3 {
 }
 
 h4 {
-    @include textStyle($black , 15, 3 , 0, 700);
+    @include textStyle($black , 15, 3 , 15, 700);
 }
 
 p, a {
