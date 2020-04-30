@@ -1,0 +1,72 @@
+.section--slider-testimony-container {
+    height: 100%;
+    .slider-bgStyle{
+        @include bgSettings(cover , no-repeat, center);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top:0;
+        bottom:0;
+    }
+    .slider-wrapper {
+        padding-top: em(130);
+        padding-bottom: em(130);
+        .testimony-carousel{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .owl-stage-outer {
+                width: 100%;
+                margin-bottom: em(65);
+            }
+            .owl-dots {
+
+                display: flex;
+                align-items: center;
+                button {
+                    width: em(10);
+                    height: em(10);
+                    border-radius: 50%;
+                    border: 2px solid $white;
+                    background-color: transparent;
+                    margin-right: em(20);
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.active {
+                        background-color: $white;
+                        border: 0;
+                    }
+                }
+            }
+            .item {
+                text-align: center;
+                .profile-header-wrapper{
+                    img {
+                        width: em(90);
+                        height: em(90);
+                        border-radius: 50%;
+                        border: 4px solid $white;
+                        margin-bottom: em(35);
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .testimony-content-wrapper{
+                    h3 {
+                        color: $white;
+                        font-weight: 300;
+                        font-style: italic;
+                        text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
