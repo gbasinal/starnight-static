@@ -25,6 +25,8 @@
   <?php include 'components/article.php' ?>
   <?php include 'components/testimony.php' ?>
   <?php include 'components/two-col.php' ?>
+  <?php include 'components/slider.php' ?>
+
 
   <!-- Default -->
   <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>

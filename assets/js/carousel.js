@@ -9,6 +9,7 @@
 
 		var _self = this;
 		_self.createTestimonialSlider();
+		_self.createSectionSlider();
 		
 	};
 	Carousel.prototype.createTestimonialSlider = function(){
@@ -20,6 +21,28 @@
 			dots: true,
 			items: 1
 		})
+
+	}
+
+	Carousel.prototype.createSectionSlider = function(){
+		
+		$(".two-col-carousel").owlCarousel({
+			loop:true,
+			margin:0,
+			nav: true,
+			dots: false,
+			items: 1
+		})
+
+		$(window).on("resize, load", function(){
+			$(".slider-two-col-wrapper").find(".card-image-wrapper").each( function(){
+				var _this = $(this);
+				var w = _this.outerWidth();
+	
+				_this.height(w);
+			})
+		})
+
 
 	}
 
