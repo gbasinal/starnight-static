@@ -93,6 +93,14 @@
             right: 0;
             bottom: em(90);
             margin-right: em(200);
+            @media only screen and (max-width: 991px){
+                bottom: 0;
+                margin-right: 0;
+                right: unset;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: em(25);
+            }
             button {
                 line-height: 1;
                 font-size: em(50);
@@ -106,17 +114,35 @@
             width: 100%;
             justify-content: space-between;
             align-items: flex-start;
+            @media only screen and (max-width: 991px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             .slider-card-wrapper {
                 display: flex;
                 width: calc(50% - 2.813em);
                 justify-content: space-between;
                 align-items: flex-start;
+
+                @media only screen and (max-width: 991px){
+                    width: 100%;
+                    margin-bottom: em(25);
+                }
+                @media only screen and (max-width: 767px){
+                    flex-direction: column;
+                }
                 .card-item {
                     width: calc(50% - 1em);
                     height: 100%;
+                    @media only screen and (max-width: 767px){
+                        width: 100%;
+                        margin-bottom: em(25);
+                    }
                     .card-image-wrapper {
                         position: relative;
-                        height: calc(50% - 1em);
+                       
+                        
                         .card-image-bgStyle {
                             @include bgSettings(cover , no-repeat, center);
                             width: 100%;
@@ -146,6 +172,9 @@
             }
             .slider-content-wrapper {
                 width: calc(50% -  2.813em);
+                @media only screen and (max-width: 991px){
+                    width: 100%;
+                }
                 h3 {
                     
                 }

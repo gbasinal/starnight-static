@@ -931,6 +931,16 @@ p, a {
 .section--slider-container .slider-wrapper .owl-nav.disabled {
   display: block;
 }
+@media only screen and (max-width: 991px) {
+  .section--slider-container .slider-wrapper .owl-nav {
+    bottom: 0;
+    margin-right: 0;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 1.5625em;
+  }
+}
 .section--slider-container .slider-wrapper .owl-nav button {
   line-height: 1;
   font-size: 3.125em;
@@ -944,19 +954,42 @@ p, a {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media only screen and (max-width: 991px) {
+  .section--slider-container .slider-wrapper .slider-two-col-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-card-wrapper {
   display: flex;
   width: calc(50% - 2.813em);
   justify-content: space-between;
   align-items: flex-start;
 }
+@media only screen and (max-width: 991px) {
+  .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-card-wrapper {
+    width: 100%;
+    margin-bottom: 1.5625em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-card-wrapper {
+    flex-direction: column;
+  }
+}
 .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-card-wrapper .card-item {
   width: calc(50% - 1em);
   height: 100%;
 }
+@media only screen and (max-width: 767px) {
+  .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-card-wrapper .card-item {
+    width: 100%;
+    margin-bottom: 1.5625em;
+  }
+}
 .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-card-wrapper .card-item .card-image-wrapper {
   position: relative;
-  height: calc(50% - 1em);
 }
 .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-card-wrapper .card-item .card-image-wrapper .card-image-bgStyle {
   background-size: cover;
@@ -986,6 +1019,11 @@ p, a {
 }
 .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-content-wrapper {
   width: calc(50% - 2.813em);
+}
+@media only screen and (max-width: 991px) {
+  .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-content-wrapper {
+    width: 100%;
+  }
 }
 .section--slider-container .slider-wrapper .slider-two-col-wrapper .slider-content-wrapper p {
   margin-top: 1.5625em;

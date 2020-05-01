@@ -28,7 +28,7 @@
 		
 		$(".two-col-carousel").owlCarousel({
 			loop:true,
-			margin:0,
+			margin: 20,
 			nav: true,
 			dots: false,
 			items: 1
